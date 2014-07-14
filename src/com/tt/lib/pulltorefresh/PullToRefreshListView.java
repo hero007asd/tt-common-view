@@ -81,6 +81,14 @@ public class PullToRefreshListView extends PullToRefreshAdapterViewBase<ListView
 		final int selection, scrollToY;
 
 		switch (getCurrentMode()) {
+			//add by tommy.shi 20140714
+//			case DISABLED:
+//				origLoadingView = getFooterLayout();
+//				listViewLoadingView = mFooterLoadingView;
+//				oppositeListViewLoadingView = mHeaderLoadingView;
+//				selection = mRefreshableView.getCount() - 1;
+//				scrollToY = getScrollY() - getFooterSize();
+//				break;
 			case MANUAL_REFRESH_ONLY:
 			case PULL_FROM_END:
 				origLoadingView = getFooterLayout();
